@@ -1,0 +1,36 @@
+{
+	"name": "object-awesome",
+	"version": "0.0.1",
+	"description": "",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"private": false,
+	"scripts": {
+		"test": "vitest run",
+		"lint": "prettier --write . && eslint 'src/**/*'",
+		"build": "tsup src/index.ts --format esm,cjs --dts",
+		"publish": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
+	},
+	"keywords": [],
+	"author": "Emanuel Martins <emanuelm.dev@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@changesets/cli": "^2.27.1",
+		"@types/node": "^20.10.2",
+		"@typescript-eslint/eslint-plugin": "^6.13.1",
+		"@typescript-eslint/parser": "^6.13.1",
+		"eslint": "^8.55.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-config-standard-with-typescript": "^40.0.0",
+		"eslint-plugin-import": "^2.25.2",
+		"eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"eslint-plugin-promise": "^6.0.0",
+		"prettier": "^3.1.0",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.2",
+		"vitest": "^0.34.6"
+	}
+}
