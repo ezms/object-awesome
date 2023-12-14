@@ -26,6 +26,9 @@
 		"java"
 	],
 	"author": "Emanuel Martins <emanuelm.dev@gmail.com>",
+	"repository": {
+		"url": "https://github.com/ezms/object-awesome"
+	},
 	"license": "MIT",
 	"devDependencies": {
 		"@changesets/cli": "^2.27.1",
