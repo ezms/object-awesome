@@ -10,6 +10,7 @@
 		"test": "vitest run",
 		"lint": "prettier --write . && eslint 'src/**/*'",
 		"build": "tsup src/index.ts --format esm,cjs --dts",
+		"ci:check": "pnpm install --frozen-lockfile && pnpm run lint && pnpm run test && pnpm run build",
 		"publish": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
 	},
 	"engines": {
