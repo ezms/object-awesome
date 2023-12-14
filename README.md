@@ -10,7 +10,7 @@ object-awesome is a tool to speed up software development and make the code more
 -   [Documentation](#doc)
 -   [Install guide](#install)
 
-## <a href="install"></a>Installation 🔧
+## <a name="install"></a>Installation 🔧
 
 Add locally to your project folder: <br/>
 _You can also install it globally but it's not recommended._
@@ -24,7 +24,7 @@ _You can also install it globally but it's not recommended._
     pnpm add object-awesome
 ```
 
-## <a href="doc"></a>Documentation 📚
+## <a name="doc"></a>Documentation 📚
 
 List to explain the methods and usages:<br/>
 
