@@ -12,6 +12,9 @@
 		"build": "tsup src/index.ts --format esm,cjs --dts",
 		"publish": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
 	},
+	"engines": {
+		"node": ">=8.3.0"
+	},
 	"keywords": [
 		"typescript",
 		"javascript",
