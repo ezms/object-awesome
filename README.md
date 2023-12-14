@@ -51,7 +51,7 @@ List to explain the methods and usages:<br/>
 | requireNonNull    | `boolean` | Receives a sequence of objects and throws an error if an object is null.             |
 | equals            | `boolean` | Receives two objects and checks if they are both exactly the same.                   |
 | strictEquals      | `boolean` | Receives two objects and checks if they are both exactly the same and also not null. |
-| clone             | `boolean` | Return a copy of given object.                                                       |
+| clone             | `any`     | Return a copy of given object.                                                       |
 
 <br/><hr/>
 Made with 💜 by Emanuel Martins © 2023.
