@@ -16,11 +16,11 @@ export class Objects {
 		return item1 === item2 || this.nonNull(item1) === item2;
 	}
 
-	public static strictEquals(item1: any, item2: any) {
+	public static strictEquals(item1: any, item2: any): boolean {
 		return this.nonNull(item1) === this.nonNull(item2);
 	}
 
-	public static clone(obj: any): void {
+	public static clone(obj: any): any {
 		if (obj instanceof Object) return { ...obj };
 		throw new Error('Object not cloneable');
 	}
